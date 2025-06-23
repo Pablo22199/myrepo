@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "the app is in building stage"
+
+test_job:
+  stage: stage
+  script:
+   - echo "the app is in testing job"
+
+deploy_job:
+  stage : deploy
+  script:
+    - echo "the app is deployed"
